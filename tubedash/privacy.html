@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tubedash privacy policy</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav><a href="/">iamcstevenson</a><a href="/tubedash/">Tubedash</a><a href="/tubedash/terms.html">Terms of service</a></nav>
+
+<h1>Tubedash privacy policy</h1>
+<p class="lede">Last updated November 19, 2026.</p>
+
+<p>Tubedash is a personal tool that I (iamcstevenson) build and run for my own use. It isn't offered to the public. This
+policy explains what it does with data, including data from Google and YouTube, for anyone who signs in to it.</p>
+
+<h2>Data from Google (YouTube API Services)</h2>
+<p>Tubedash uses YouTube API Services. Connecting YouTube is optional and only needed to save videos to a playlist.
+When you connect, Google asks you to grant the scope <code>https://www.googleapis.com/auth/youtube</code> (“manage your
+YouTube account”). Tubedash uses it only for the following:</p>
+<table>
+  <tr><th>Data</th><th>What Tubedash does with it</th></tr>
+  <tr><td>Your channel's name</td><td>Shows which account is connected.</td></tr>
+  <tr><td>Your playlists' names and IDs</td><td>Finds the playlist named “TubeDash” (or the name set in its settings). It never creates, renames or deletes playlists.</td></tr>
+  <tr><td>The items in that one playlist</td><td>Lists them to show which videos are saved, adds a video when you click Save, and removes it when you click it again.</td></tr>
+  <tr><td>A sign-in token from Google</td><td>Lets Tubedash do the above without asking you to sign in each time.</td></tr>
+</table>
+<p>Tubedash does not access your watch history, subscriptions, comments, uploads, other playlists, email address, or any
+other Google or YouTube data, and it never uploads, edits or deletes videos.</p>
+
+<h2>How data is stored</h2>
+<ul>
+  <li>The sign-in token, the playlist's ID and name, and which videos are saved are stored in Tubedash's database on
+    the private server it runs on. Only my own devices can reach that server, over a private network.</li>
+  <li>The database is backed up nightly. Backups are encrypted before they leave the server and are kept for 14 days.</li>
+  <li>The rest of the database holds public information: the channels followed, their public videos and descriptions,
+    the summaries Tubedash wrote, and which videos were marked watched.</li>
+</ul>
+
+<h2>Sharing</h2>
+<p>Tubedash does not sell, rent, transfer or share Google user data with anyone, does not use it for advertising, and
+does not use it to train AI or machine-learning models. No person reads it except me, as the operator, when needed for
+security or to fix a problem.</p>
+<p>To write summaries, Tubedash sends the <em>public</em> link, title and description of a video to Google's Gemini
+API. This never includes your Google account data.</p>
+<p>Tubedash's use and transfer of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+
+<h2>Removing access and deleting data</h2>
+<ul>
+  <li><b>Disconnect</b> in Tubedash revokes its access with Google and deletes the sign-in token from its database.</li>
+  <li>You can also remove access at any time at
+    <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a> or the
+    <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.</li>
+  <li>To have any remaining data deleted, open an issue (below); it's deleted within 7 days, and from backups within the
+    following 14 days.</li>
+</ul>
+
+<h2>Google and YouTube</h2>
+<p>Using Tubedash's YouTube features means you also agree to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of your data is covered by the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>Cookies and tracking</h2>
+<p>Tubedash and this website use no cookies, analytics or trackers.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the date at the top changes too. Questions or requests:
+<a href="https://github.com/iamcstevenson/iamcstevenson.github.io/issues">open an issue on GitHub</a>.</p>
+
+<footer><a href="/tubedash/">Tubedash</a> · Privacy policy · <a href="/tubedash/terms.html">Terms of service</a></footer>
+</body>
+</html>

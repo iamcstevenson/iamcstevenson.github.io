@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tubedash</title>
+<meta name="description" content="Tubedash: a private dashboard of new videos from the YouTube channels you follow, with short summaries and saving to a YouTube playlist.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav><a href="/">iamcstevenson</a><a href="/tubedash/privacy.html">Privacy policy</a><a href="/tubedash/terms.html">Terms of service</a></nav>
+
+<h1>Tubedash</h1>
+<p class="lede">A private dashboard of new videos from the YouTube channels I follow, with a short summary of each and a
+button to save a video to my YouTube playlist.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li><b>New videos in one place.</b> Tubedash checks the public feeds of the channels I follow every 15 minutes and lists
+    new uploads, with each creator's description.</li>
+  <li><b>Short summaries on request.</b> When I click Summarize, Google's Gemini API watches the public video and writes a
+    3 to 5 line gist, so I can decide what's worth watching.</li>
+  <li><b>Save to YouTube.</b> A Save button adds a video to a playlist named “TubeDash” on my YouTube channel, so it shows
+    up in the YouTube app and on my TV. Clicking it again removes the video.</li>
+  <li><b>Watched and filters.</b> Mark videos watched, and filter by channel, date, Shorts or saved videos.</li>
+</ul>
+
+<h2>Who it's for</h2>
+<p>Tubedash is a personal tool. I run it for myself on a private server that only my own devices can reach. It isn't
+offered as a service, has no public sign-up and isn't available to anyone else.</p>
+
+<h2>How it uses Google data</h2>
+<p>Saving to YouTube is the only part that uses my Google account. When I connect YouTube, Google asks me to allow
+Tubedash to manage my YouTube account, which is the narrowest permission Google offers for changing a playlist. With it,
+Tubedash only:</p>
+<ul>
+  <li>reads my channel's name, to show which account is connected;</li>
+  <li>reads my playlists, to find the one named “TubeDash”;</li>
+  <li>lists, adds and removes videos in that one playlist.</li>
+</ul>
+<p>It never uploads, deletes or edits videos, never touches other playlists, comments, subscriptions or watch history,
+and never shares or sells any data. The details are in the <a href="/tubedash/privacy.html">privacy policy</a>.</p>
+
+<p>Tubedash uses YouTube API Services. By using it you agree to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>; see also the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<footer>Tubedash · <a href="/tubedash/privacy.html">Privacy policy</a> · <a href="/tubedash/terms.html">Terms of service</a> ·
+Questions: <a href="https://github.com/iamcstevenson/iamcstevenson.github.io/issues">open an issue on GitHub</a></footer>
+</body>
+</html>
